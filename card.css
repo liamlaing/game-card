@@ -1,10 +1,11 @@
 #banner-bottom {
+    font-size: 32pt;
     padding: 8pt 12pt;
-    height: 64pt;
+    height: 128pt;
 }
 
 #content {
-    font-size: 16pt;
+    font-size: 42pt;
     height: min(100vw, 100vh - 64pt);
 }
 
@@ -40,12 +41,12 @@
 
 #content td p {
     background-color: #ffffff;
-    border-radius: 17pt;
-    line-height: 34pt;
+    border-radius: 30pt;
+    line-height: 60pt;
     position: absolute;
-    width: 34pt;
-    height: 34pt;
+    width: 60pt;
+    height: 60pt;
 
-    margin-left: calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 17pt);
-    margin-top:  calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 17pt);
+    margin-left: calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 30pt);
+    margin-top:  calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 30pt);
 }
