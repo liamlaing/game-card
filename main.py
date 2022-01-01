@@ -5,9 +5,12 @@ from datetime import datetime
 
 
 class OpenElement:
-    def __init__(self, top, bot):
+    def __init__(self, top, bot=None):
         self._top = top
         self._bot = bot
+        if not self._bot:
+            tag, *_ = top.spit()
+            self._bot = f'</{tag.strip("<>")}>'
 
     def __enter__(self):
         print(self._top)
