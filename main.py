@@ -30,7 +30,7 @@ p1_token, p2_token = tokens
 null = width * height - p1 - p2 - omicorn
 
 def compile_time():
-    print(f'<p class="text-monospace"><b>Last Run: </b>{datetime.today().strftime("%H:%M")}</p>')
+    print(f'<b>Briefing Compiled: </b>{datetime.today().strftime("%A at %H:%M")}')
 
 def starting_player():
     print(f'<b>Starting Player: </b>{p1_token}')
@@ -48,8 +48,8 @@ def code_generator():
             output += "</td>\n"
         output += "</tr>\n"
     output += "</tbody>\n" + "</table>\n"
+    with OpenElement('<div id="banner-top">', '</div>'):
+        compile_time()
     print(output)
-    # print('<br/>')
     with OpenElement('<div id="banner-bottom">', '</div>'):
         starting_player()
-        compile_time()

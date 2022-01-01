@@ -1,3 +1,9 @@
+#banner-top {
+    font-size: 32pt;
+    padding: 8pt 12pt;
+    height: 128pt;
+}
+
 #banner-bottom {
     font-size: 32pt;
     padding: 8pt 12pt;
@@ -9,6 +15,7 @@
     height: min(100vw, 100vh - 64pt);
 }
 
+#banner-top,
 #banner-bottom,
 #content {
     margin: 0 auto;
