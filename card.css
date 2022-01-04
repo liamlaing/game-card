@@ -1,24 +1,24 @@
 #banner-top {
-    font-size: 32pt;
-    line-height: 60pt;
-    padding: 8pt 0pt;
-    height: 128pt;
+    font-size: 12pt;
+    line-height: 24pt;
+    padding: 4pt 0pt;
+    height: 48pt;
 }
 
 #banner-top > p {
     margin: 0;
-    padding: 0 12pt;
+    padding: 0 6pt;
 }
 
 #content {
-    font-size: 42pt;
-    height: min(100vw, 100vh - 144pt);
+    font-size: 24pt;
+    height: min(100vw, 100vh - 56pt);
 }
 
 #banner-top,
 #content {
     margin: 0 auto;
-    width: min(100vw, 100vh - 144pt);
+    width: min(100vw, 100vh - 56pt);
 }
 
 #content .table-danger {
@@ -45,24 +45,27 @@
 #content td {
     background-clip: content-box;
     border: none;
-    padding: 2pt;
+    padding: 1pt;
     position: relative;
 }
 
 #content td p {
     background-color: #ffffff;
-    border-radius: 30pt;
-    line-height: 60pt;
+    border-radius: 15pt;
+    line-height: 30pt;
     position: absolute;
-    width: 60pt;
-    height: 60pt;
+    width: 30pt;
+    height: 30pt;
     text-align: center;
-    margin-left: calc(0.10 * min(100vw - 20pt, 100vh - 164pt) - 30pt);
-    margin-top:  calc(0.10 * min(100vw - 20pt, 100vh - 164pt) - 30pt);
+    margin-left: calc(0.10 * min(100vw - 10pt, 100vh - 66pt) - 15pt);
+    margin-top:  calc(0.10 * min(100vw - 10pt, 100vh - 66pt) - 15pt);
 }
 
 body {
     margin: 0;
+}
+
+p {
     text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
