@@ -1,25 +1,23 @@
 #banner-top {
     font-size: 32pt;
+    line-height: 60pt;
     padding: 8pt 12pt;
     height: 128pt;
 }
 
-#banner-bottom {
-    font-size: 32pt;
-    padding: 8pt 12pt;
-    height: 128pt;
+#banner-top > p {
+    margin: 0;
 }
 
 #content {
     font-size: 42pt;
-    height: min(100vw, 100vh - 64pt);
+    height: min(100vw, 100vh - 144pt);
 }
 
 #banner-top,
-#banner-bottom,
 #content {
     margin: 0 auto;
-    width: min(100vw, 100vh - 64pt);
+    width: min(100vw, 100vh - 144pt);
 }
 
 #content .table-danger {
@@ -39,6 +37,10 @@
     background-color: #3f51b5;
 }
 
+#content > tbody {
+    vertical-align: inherit;
+}
+
 #content td {
     background-clip: content-box;
     border: none;
@@ -53,7 +55,11 @@
     position: absolute;
     width: 60pt;
     height: 60pt;
+    text-align: center;
+    margin-left: calc(0.10 * min(100vw - 20pt, 100vh - 164pt) - 30pt);
+    margin-top:  calc(0.10 * min(100vw - 20pt, 100vh - 164pt) - 30pt);
+}
 
-    margin-left: calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 30pt);
-    margin-top:  calc(0.10 * min(100vw - 20pt, 100vh - 84pt) - 30pt);
+body {
+    margin: 0;
 }

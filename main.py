@@ -35,17 +35,17 @@ null = width * height - p1 - p2 - omicorn
 
 def compile_time():
     print(
-        f'<b>Briefing Compiled: </b>{datetime.today().strftime("%A at %H:%M")}')
+        f'<p><b>Briefing Compiled: </b>{datetime.today().strftime("%A at %H:%M")}</p>')
 
 
 def starting_player():
-    print(f'<b>Starting Player: </b>{p1_token}')
+    print(f'<p><b>Starting Player: </b>{p1_token}</p>')
 
 
 def code_generator():
-    cards = ['<td class=\"table-danger\">' + '<p class="text-center">' + p1_token + '</p>'] * p1 + ['<td class=\"table-primary\">' + '<p class="text-center">' + p2_token + '</p>'] * p2 + \
-        ['<td class=\"table-dark\">' + '<p class="text-center">' + '<b>O</b>' + '</p>'] * omicorn + \
-        ['<td class=\"table-info\">' + '<p class="text-center">' +
+    cards = ['<td class=\"table-danger\">' + '<p>' + p1_token + '</p>'] * p1 + ['<td class=\"table-primary\">' + '<p>' + p2_token + '</p>'] * p2 + \
+        ['<td class=\"table-dark\">' + '<p>' + '<b>O</b>' + '</p>'] * omicorn + \
+        ['<td class=\"table-info\">' + '<p>' +
             '\N{Face with Medical Mask}'+'</p>'] * null
     random.shuffle(cards)
     output = "<table id=\"content\" class=\"table\">\n" + "<tbody>\n"
@@ -58,6 +58,5 @@ def code_generator():
     output += "</tbody>\n" + "</table>\n"
     with OpenElement('<div id="banner-top">', '</div>'):
         compile_time()
-    print(output)
-    with OpenElement('<div id="banner-bottom">', '</div>'):
         starting_player()
+    print(output)
